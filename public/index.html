@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaam Agency | Architecting Digital Excellence</title>
+    <meta
+      name="description"
+      content="Kaam is a modern agency delivering project management, consultancy, and construction solutions."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#0b0f19',
+                charcoal: '#121826',
+                blue: '#3b82f6',
+                gold: '#d4af37'
+              }
+            },
+            fontFamily: {
+              heading: ['Inter', 'sans-serif'],
+              body: ['"Playfair Display"', 'serif']
+            },
+            boxShadow: {
+              glow: '0 0 0 1px rgba(255,255,255,0.06), 0 20px 40px rgba(0,0,0,0.35)'
+            }
+          }
+        }
+      };
+    </script>
+
+    <style>
+      body {
+        background-color: #0b0f19;
+        background-image:
+          linear-gradient(rgba(11, 15, 25, 0.8), rgba(11, 15, 25, 0.82)),
+          url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=2200&q=80');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      .reveal.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+
+  <body class="text-slate-100 antialiased">
+    <header class="fixed inset-x-0 top-0 z-50">
+      <nav
+        class="mx-auto mt-4 flex w-[92%] max-w-6xl items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-5 py-3 shadow-glow backdrop-blur-xl"
+        aria-label="Main navigation"
+      >
+        <a href="#home" class="font-heading text-lg font-bold tracking-wide text-white">KAAM</a>
+        <div class="hidden items-center gap-7 text-sm font-medium text-slate-200 md:flex">
+          <a class="transition hover:text-brand-gold" href="#services">Services</a>
+          <a class="transition hover:text-brand-gold" href="#portfolio">Portfolio</a>
+          <a class="transition hover:text-brand-gold" href="#contact">Contact</a>
+        </div>
+        <a
+          href="#contact"
+          class="rounded-full border border-brand-blue/50 bg-brand-blue/20 px-4 py-2 text-sm font-semibold text-blue-100 transition hover:bg-brand-blue/35"
+          >Let’s Talk</a
+        >
+      </nav>
+    </header>
+
+    <main id="home" class="mx-auto max-w-6xl px-5 pt-36 md:px-8">
+      <section class="reveal py-16 md:py-24">
+        <p class="mb-5 font-heading text-sm uppercase tracking-[0.24em] text-brand-gold">Kaam Agency</p>
+        <h1 class="max-w-4xl font-heading text-4xl font-extrabold leading-tight text-white sm:text-5xl md:text-6xl">
+          Architecting Digital Excellence
+        </h1>
+        <p class="mt-7 max-w-2xl font-body text-lg leading-relaxed text-slate-300">
+          We build future-ready systems with precision, clarity, and aesthetic rigor—blending strategic thinking with practical execution for ambitious organizations.
+        </p>
+        <div class="mt-10 flex flex-wrap items-center gap-4">
+          <a
+            href="#services"
+            class="rounded-full bg-brand-gold px-7 py-3 font-heading text-sm font-bold uppercase tracking-wider text-brand-dark transition hover:brightness-110"
+            >Explore Services</a
+          >
+          <a
+            href="#portfolio"
+            class="rounded-full border border-slate-600 px-7 py-3 font-heading text-sm font-semibold uppercase tracking-wider text-slate-200 transition hover:border-slate-400 hover:text-white"
+            >View Portfolio</a
+          >
+        </div>
+      </section>
+
+      <section id="services" class="reveal py-14 md:py-20">
+        <div class="mb-10 flex items-end justify-between gap-4">
+          <h2 class="font-heading text-3xl font-bold text-white md:text-4xl">Services</h2>
+          <span class="hidden font-heading text-sm uppercase tracking-[0.2em] text-slate-400 sm:inline">What We Do</span>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="rounded-2xl border border-white/10 bg-brand-charcoal/70 p-7 shadow-glow transition hover:-translate-y-1 hover:border-brand-blue/60">
+            <h3 class="font-heading text-xl font-semibold text-white">Project Management</h3>
+            <p class="mt-4 font-body leading-relaxed text-slate-300">
+              End-to-end oversight with milestone accuracy, risk control, and transparent collaboration.
+            </p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-brand-charcoal/70 p-7 shadow-glow transition hover:-translate-y-1 hover:border-brand-blue/60">
+            <h3 class="font-heading text-xl font-semibold text-white">Consultancy</h3>
+            <p class="mt-4 font-body leading-relaxed text-slate-300">
+              Strategic advisory that aligns digital infrastructure and operations with measurable goals.
+            </p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-brand-charcoal/70 p-7 shadow-glow transition hover:-translate-y-1 hover:border-brand-blue/60">
+            <h3 class="font-heading text-xl font-semibold text-white">Construction Solutions</h3>
+            <p class="mt-4 font-body leading-relaxed text-slate-300">
+              Practical solutioning from concept to delivery—built for durability, scale, and performance.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="portfolio" class="reveal py-14 md:py-20">
+        <div class="mb-10 flex items-end justify-between gap-4">
+          <h2 class="font-heading text-3xl font-bold text-white md:text-4xl">Featured Portfolio</h2>
+          <span class="hidden font-heading text-sm uppercase tracking-[0.2em] text-slate-400 sm:inline">Selected Works</span>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="group relative overflow-hidden rounded-2xl border border-white/10 bg-brand-charcoal">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80" alt="Corporate control room project" class="h-72 w-full object-cover opacity-85 transition duration-500 group-hover:scale-105 group-hover:opacity-50" />
+            <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/75 via-black/25 to-transparent p-5">
+              <div>
+                <h3 class="font-heading text-lg font-semibold text-white">Operations Command Suite</h3>
+                <p class="font-body text-sm text-slate-200">Infrastructure modernization</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="group relative overflow-hidden rounded-2xl border border-white/10 bg-brand-charcoal">
+            <img src="https://images.unsplash.com/photo-1507209696998-3c532be9b2b5?auto=format&fit=crop&w=1200&q=80" alt="High-rise planning model" class="h-72 w-full object-cover opacity-85 transition duration-500 group-hover:scale-105 group-hover:opacity-50" />
+            <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/75 via-black/25 to-transparent p-5">
+              <div>
+                <h3 class="font-heading text-lg font-semibold text-white">Urban Development Blueprint</h3>
+                <p class="font-body text-sm text-slate-200">Consulting & project planning</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="group relative overflow-hidden rounded-2xl border border-white/10 bg-brand-charcoal sm:col-span-2 lg:col-span-1">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Modern architecture facade" class="h-72 w-full object-cover opacity-85 transition duration-500 group-hover:scale-105 group-hover:opacity-50" />
+            <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/75 via-black/25 to-transparent p-5">
+              <div>
+                <h3 class="font-heading text-lg font-semibold text-white">Next-Gen Commercial Hub</h3>
+                <p class="font-body text-sm text-slate-200">Construction solutions delivery</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="reveal border-t border-white/10 py-10">
+      <div class="mx-auto flex w-[92%] max-w-6xl flex-col items-start justify-between gap-6 text-slate-300 sm:flex-row sm:items-center">
+        <p class="font-body text-sm">© 2026 Kaam Agency · kaam.choktira.com</p>
+        <div class="flex items-center gap-5 font-heading text-sm font-semibold">
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="transition hover:text-brand-gold">LinkedIn</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noreferrer" class="transition hover:text-brand-gold">Instagram</a>
+          <a href="mailto:hello@kaam.choktira.com" class="transition hover:text-brand-gold">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+  </body>
+</html>
